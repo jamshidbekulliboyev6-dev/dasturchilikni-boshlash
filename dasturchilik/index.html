@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Dasturlash — kod yozishni boshlang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="top">
+            <a class="logo" href="#top">dasturlash.uz</a>
+            <nav><a href="#nega">Nega?</a><a href="#yol">Yo‘l</a><a href="#tillar">Tillar</a><a
+                    href="#boshlash">Boshlash</a></nav>
+        </header>
+
+        <main id="top">
+            <div class="hero">
+                <div>
+                    <h1>Fikrni <span>kodga</span> aylantiring.</h1>
+                    <p>Dasturlash — kompyuterga aniq ko‘rsatma berish san’ati. Telefondagi ilova ham, bank to‘lovi ham,
+                        o‘yin ham shu ko‘rsatmalardan tug‘iladi. Boshlash uchun maxsus diplom shart emas.</p>
+                    <a class="btn" href="#yol">O‘rganish yo‘lini ko‘rish</a><a class="btn ghost"
+                        href="#boshlash">Birinchi qadam</a>
+                </div>
+
+                <div class="editor" aria-label="Kod namunasi">
+                    <div class="tabs" role="tablist">
+                        <button class="tab" role="tab" aria-selected="true" data-l="py">salom.py</button>
+                        <button class="tab" role="tab" aria-selected="false" data-l="js">salom.js</button>
+                    </div>
+                    <pre id="code" aria-live="polite"></pre>
+                    <div class="runbar"><span style="color:var(--code-dim);font-size:.85rem">Natijani ko‘rish uchun
+                            bosing</span><button class="run" id="run">▶ Ishga tushirish</button></div>
+                    <div class="out" id="out"><em>Natija shu yerda chiqadi…</em></div>
+                </div>
+            </div>
+
+            <section id="nega">
+                <h2>Nega dasturlashni o‘rganish kerak?</h2>
+                <p class="lead">Kod yozish bugun eng ko‘p tarmoqqa kirib borgan ko‘nikmalardan biri.</p>
+                <div class="why">
+                    <div>
+                        <h3>Muammoni yechasiz</h3>
+                        <p>Katta vazifani kichik qadamlarga bo‘lish — dasturchining asosiy odati va u hayotda ham
+                            asqotadi.</p>
+                    </div>
+                    <div>
+                        <h3>Talab katta</h3>
+                        <p>Veb, mobil ilovalar, ma’lumotlar tahlili, sun’iy intellekt: barcha sohada dasturchi kerak.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Masofadan ishlash mumkin</h3>
+                        <p>Kompyuter va internet bo‘lsa, dunyoning istalgan joyidagi jamoa yoki mijoz uchun ishlash
+                            mumkin.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="yol">
+                <h2>Noldan boshlab qanday yurish kerak</h2>
+                <p class="lead">Bu ketma-ketlik — yo‘l xaritasi. Har bosqichda kichik loyiha qiling.</p>
+                <ol class="path">
+                    <li>
+                        <h3>Mantiqni tushunish</h3>
+                        <p>O‘zgaruvchilar, shartlar (agar… unda…), takrorlanishlar. Bular har bir tilda bir xil g‘oya.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Birinchi tilni tanlash</h3>
+                        <p>Python yoki JavaScript — yangi boshlovchi uchun qulay. Bittasini tanlab, to‘liq o‘rganing.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Funksiyalar va ma’lumotlar</h3>
+                        <p>Ro‘yxatlar, lug‘atlar, funksiyalar. Kodni qayta ishlatiladigan bo‘laklarga ajratishni
+                            o‘rganing.</p>
+                    </li>
+                    <li>
+                        <h3>Kichik loyiha yasash</h3>
+                        <p>Hisob-kitob dasturi, vazifalar ro‘yxati, oddiy o‘yin — o‘zingiz ishlatadigan narsa yarating.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Git va jamoada ishlash</h3>
+                        <p>Kodni saqlash, o‘zgarishlarni kuzatish va boshqalar bilan birga ishlashni boshlang.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="tillar">
+                <h2>Mashhur dasturlash tillari</h2>
+                <p class="lead">Hech biri “eng yaxshi” emas: maqsadingizga qarab tanlang.</p>
+                <div class="langs">
+                    <div class="lang">
+                        <h3>Python</h3><small>Ma’lumotlar, AI, skriptlar</small>
+                        <p>Sodda sintaksis, o‘qilishi oson. Birinchi til sifatida juda ommabop.</p>
+                    </div>
+                    <div class="lang">
+                        <h3>JavaScript</h3><small>Veb-saytlar, ilovalar</small>
+                        <p>Brauzerda ishlaydigan yagona til. Ko‘rinadigan natijani tez olasiz.</p>
+                    </div>
+                    <div class="lang">
+                        <h3>Java / Kotlin</h3><small>Android, korxona tizimlari</small>
+                        <p>Katta tizimlar va mobil ilovalar uchun mustahkam tanlov.</p>
+                    </div>
+                    <div class="lang">
+                        <h3>C# / Swift</h3><small>O‘yinlar, iOS, desktop</small>
+                        <p>Unity o‘yinlari yoki Apple qurilmalari uchun ilovalar yaratishda ishlatiladi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="boshlash">
+                <div class="tips">
+                    <h2>Bugun nima qilish mumkin</h2>
+                    <ul>
+                        <li><b>Bitta til tanlang</b> va bir oy faqat shuni o‘rganing.</li>
+                        <li><b>Har kuni 30–60 daqiqa</b> yozing: ketma-ketlik uzun marafondan yaxshi.</li>
+                        <li><b>Faqat video ko‘rmang</b>, kodni o‘zingiz yozing va xato qiling.</li>
+                        <li><b>Xatodan qo‘rqmang:</b> xato xabarini o‘qish — ko‘nikmaning yarmi.</li>
+                        <li><b>Savol bering:</b> jamoalarda, forumlarda va AI yordamchida.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>© 2026 dasturlash.uz — boshlovchilar uchun o‘quv sahifa.</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
